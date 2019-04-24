@@ -18,7 +18,7 @@ function deepestChild() {
   var current = document.getElementById('grand-node');
   
   while (current.firstChild) {
-    current = current.firstChild;
+    current = current.firstChild.innerHTML;
   }
   
   return current;
